@@ -1,0 +1,74 @@
+Command failed: g++ -o "d:/CODING/CSES/SubarraySum1/Tests/a.exe" "d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp" -std=c++14
+d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp: In function 'int main()':
+d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:19:16: error: no matching function for call to 'std::map<int, int>::insert(ll&)'
+   19 |    s.insert(res); }
+      |                ^
+In file included from c:\users\user\downloads\c\mingw\include\c++\9.2.0\map:61,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\x86_64-w64-mingw32\bits\stdc++.h:81,
+                 from d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:1:
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:801:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(const value_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, int>]'
+  801 |       insert(const value_type& __x)
+      |       ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:801:32: note:   no known conversion for argument 1 from 'll' {aka 'long long int'} to 'const value_type&' {aka 'const std::pair<const int, int>&'}
+  801 |       insert(const value_type& __x)
+      |              ~~~~~~~~~~~~~~~~~~^~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:808:7: note: candidate: 'std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator = std::_Rb_tree_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, int>]'
+  808 |       insert(value_type&& __x)
+      |       ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:808:27: note:   no known conversion for argument 1 from 'll' {aka 'long long int'} to 'std::map<int, int>::value_type&&' {aka 'std::pair<const int, int>&&'}
+  808 |       insert(value_type&& __x)
+      |              ~~~~~~~~~~~~~^~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:814:2: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, std::pair<typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator, bool> > std::map<_Key, _Tp, _Compare, _Alloc>::insert(_Pair&&) [with _Pair = _Pair; _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]'
+  814 |  insert(_Pair&& __x)
+      |  ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:814:2: note:   template argument deduction/substitution failed:
+In file included from c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\move.h:55,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\nested_exception.h:40,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\exception:144,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\ios:39,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\istream:38,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\sstream:38,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\complex:45,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\ccomplex:39,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\x86_64-w64-mingw32\bits\stdc++.h:54,
+                 from d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:1:
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\type_traits: In substitution of 'template<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = std::integral_constant<bool, false>::value; _Tp = std::pair<std::_Rb_tree_iterator<std::pair<const int, int> >, bool>]':
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:814:2:   required by substitution of 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const int, int>, _Pair>::value, std::pair<std::_Rb_tree_iterator<std::pair<const int, int> >, bool> > std::map<int, int>::insert<_Pair>(_Pair&&) [with _Pair = long long int&]'
+d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:19:16:   required from here
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\type_traits:2405:11: error: no type named 'type' in 'struct std::enable_if<false, std::pair<std::_Rb_tree_iterator<std::pair<const int, int> >, bool> >'
+ 2405 |     using __enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~~~
+In file included from c:\users\user\downloads\c\mingw\include\c++\9.2.0\map:61,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\x86_64-w64-mingw32\bits\stdc++.h:81,
+                 from d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:1:
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:828:7: note: candidate: 'void std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::initializer_list<std::pair<const _Key, _Tp> >) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]'
+  828 |       insert(std::initializer_list<value_type> __list)
+      |       ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:828:48: note:   no known conversion for argument 1 from 'll' {aka 'long long int'} to 'std::initializer_list<std::pair<const int, int> >'
+  828 |       insert(std::initializer_list<value_type> __list)
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:858:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, const value_type&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, int>]'
+  858 |       insert(const_iterator __position, const value_type& __x)
+      |       ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:858:7: note:   candidate expects 2 arguments, 1 provided
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:868:7: note: candidate: 'std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, std::map<_Key, _Tp, _Compare, _Alloc>::value_type&&) [with _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const int, int> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const int, int>]'
+  868 |       insert(const_iterator __position, value_type&& __x)
+      |       ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:868:7: note:   candidate expects 2 arguments, 1 provided
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:873:2: note: candidate: 'template<class _Pair> std::__enable_if_t<std::is_constructible<std::pair<const _Key, _Tp>, _Pair>::value, typename std::_Rb_tree<_Key, std::pair<const _Key, _Tp>, std::_Select1st<std::pair<const _Key, _Tp> >, _Compare, typename __gnu_cxx::__alloc_traits<_Allocator>::rebind<std::pair<const _Key, _Tp> >::other>::iterator> std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::const_iterator, _Pair&&) [with _Pair = _Pair; _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]'
+  873 |  insert(const_iterator __position, _Pair&& __x)
+      |  ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:873:2: note:   template argument deduction/substitution failed:
+d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:19:16: note:   candidate expects 2 arguments, 1 provided
+   19 |    s.insert(res); }
+      |                ^
+In file included from c:\users\user\downloads\c\mingw\include\c++\9.2.0\map:61,
+                 from c:\users\user\downloads\c\mingw\include\c++\9.2.0\x86_64-w64-mingw32\bits\stdc++.h:81,
+                 from d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:1:
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:891:2: note: candidate: 'template<class _InputIterator> void std::map<_Key, _Tp, _Compare, _Alloc>::insert(_InputIterator, _InputIterator) [with _InputIterator = _InputIterator; _Key = int; _Tp = int; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, int> >]'
+  891 |  insert(_InputIterator __first, _InputIterator __last)
+      |  ^~~~~~
+c:\users\user\downloads\c\mingw\include\c++\9.2.0\bits\stl_map.h:891:2: note:   template argument deduction/substitution failed:
+d:/CODING/CSES/SubarraySum1/SubarraySum1.cpp:19:16: note:   candidate expects 2 arguments, 1 provided
+   19 |    s.insert(res); }
+      |                ^
